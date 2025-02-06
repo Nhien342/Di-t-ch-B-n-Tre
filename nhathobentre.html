@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhà thờ Bến Tre</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://dulichtoivaban.com/wp-content/uploads/2022/09/Nha-Tho-La-Ma-Ben-Tre-la-mot-trong-ba-trung-tam-hanh-huong-Cong-giao.jpg.webp"></script>
+<script src="https://i.ytimg.com/vi/ZLKDtMBGaVE/hqdefault.jpg"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .breadcrumb {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.breadcrumb a {
+  color: #2c7a2c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  color: #555;
+}
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+#lightbox-caption {
+    color: white;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#prev-lightbox, #next-lightbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#prev-lightbox { left: 10px; }
+#next-lightbox { right: 10px; }
+
+#close-lightbox {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+<nav class="breadcrumb">
+  <a href="index.html">Trang chủ</a> >
+  <a href="ditich.html">Khu di tích</a> >
+  <span>Nguyễn Đình Chiểu</span>
+</nav>
+<header>
+    <h1>Nhà thờ Bến Tre</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="nguyendinhchieu.html">Nguyễn Đình Chiểu</a></li>
+            <li><a href="nhathobentre.html">Nhà Thờ Bến Tre</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="banner" style="background: url('images/nhathobentre-banner.jpg') no-repeat center/cover;">
+
+<div id="lightbox">
+  <span id="close-lightbox" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+  <p id="lightbox-caption"></p>
+  <button id="prev-lightbox" onclick="prevImage()">❮</button>
+  <button id="next-lightbox" onclick="nextImage()">❯</button>
+</div>
+
+  <h2>Nhà thờ Bến Tre</h2>
+</section>
+
+<section class="content">
+<h2 class="fade-in">Giới thiệu</h2>
+  <p class="fade-in">Theo tài liệu Cha Danvy để lại (1910 - 1911) : Tại rạch Bến tre cách sông Hàm Luông hai cây số - năm 1869 có một số gia đình có đạo Công giáo. Năm 1871, có 42 người. Năm 1872 có 50 người - chưa có nhà thờ - chưa có Cha nào dòm ngó.
+Năm 1875, họ đạo Sóc Sải được thành lập - Cha sở Bình lên xuống thăm viếng xứ đạo Bến Tre, bắt đầu qui tụ bổn đạo và làm lễ tại nhà thầy Gia (anh rể quan Phủ Lộc) hoặc nhà thầy Thanh (Thầy giảng ở Hà Nội - làm thông ngôn) hoặc nhà thầy Dưỡng (sau là ông Phủ Dưỡng).</p>
+
+  <div class="image-container">
+    <img src="https://dulichtoivaban.com/wp-content/uploads/2022/09/Nha-Tho-La-Ma-Ben-Tre-la-mot-trong-ba-trung-tam-hanh-huong-Cong-giao.jpg.webp">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOnjw-dRruVv0UObO8V-Lt4SW-IrQ5C5Q0mIDQ=s1360-w1360-h1020" alt="Đức Mẹ Lộ Đức">
+  </div>
+
+
+</section>
+
+   <h2 class="fade-in">Lịch sử</h2>
+      <div class="image-container">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOpi-bWewnXbHTtSB5FA2xrk8x9cEzyEV6ZBJUV=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMw_y9x0NNUt14-6Y1JlzlZ3kAc5umpJdN5N2YP=s1360-w1360-h1020">
+  </div>
+    <p>Năm 1879, số bổn đạo Bến Tre nhập về họ Mái Dầm (nay là Thanh Sơn) do Cha Trung đảm trách. Mãi đến năm 1884, ông Lê Quang Hậu dâng đất cất nhà thờ Bến Tre. Có ông Thầy Sang - Thầy Oai - Thầy Hiền - ông Câu Nhan - ông Biện Cần đoàn kết một lòng xin Cha cất Nhà thờ Bến Tre.
+Năm 1885, Cha Lại về Bến Tre cùng bổn đạo cất nhà thờ Bến Tre gần đường đến nhà thương, kinh phí 800 trăm đồng. Họ đạo Bến Tre chính thức có từ đây.
+Năm 1887, Cha xin trợ giúp - ông Lê Quang Hiền (anh em ông Lê Quang Hậu) dâng luôn sở đất để Cha cất lại Nhà thờ rộng rãi hơn. Năm 1889, Nhà thờ làm xong, số bổn đạo giờ đây lên tới 136 người. Hai anh em Hiền - Hậu dâng cái chuông đồng nặng 100kg.
+Năm 1890, Cha Thích nối nghiệp Cha Lại, tổ chức Trùm - Câu - Biện, bà Phủ Dư ỡ ng dâng tượng Đức Mẹ.
+Năm 1894, Cha Hoàng (P. Frison) ñến thay Cha Thích, số bổn đạo lên đến 388 người. Cù lao Bến Tre và các họ lân cận bấy giờ thuộc về hạt Cái Mơn (Cha Gernot - Cha sở Cái Mơn làm Hạt trưởng). Cha kêu gọi, ông Lê Quang Hậu dâng cúng hai mẫu đất gần Châu Thành - Bến Tre. Phải nói là ông Lê Quang Hậu và ông Leâ Quang Hiền là hai đại ân nhân của Họ đạo Bến Tre.
+Năm 1985, Cha Vị (P. Danvy) về Bến Tre thay Cha Hoàng. Cha tu bổ trong ngoài. Năm 1904 có Đức Cha Mão (Mgr. Mossard)đến làm phép Nhà thờ Bến Tre, chọn bổn mạng là "Đức Mẹ Vô Nhiễm" .
+Năm 1941, Cha Gioan-Baotixita Nhạn về Bến Tre, Nhà thờ xiên xẹo định sửa chữa nhưng thời cuộc không cho phép. Năm 1948, Cha Phaolô Quang khởi công, rồi cũng bỏ dở. Mãi đến năm 1955, Cha Phêrô Tri tiếp tục hoàn thành ngôi thánh đường khang trang kiên cố tới nay.
+Năm 1963, xây trường Tiểu học 6 căn có lầu. Năm 1972, xây trường Trung học Tân Dân 8 căn 4 lớp. Đến năm 1998, tuổi già sức yếu Cha Phêrô Tri xin nghỉ hưu. Đức Cha Giacôbê Nguyễn Văn Mầu bổ nhiệm Cha Phêrô Nguyễn Văn Hiến đến thay. Cha tu sửa nhà thờ, nhà xứ mới mẽ đẹp đẽ. Hiện nay giáo dân khoảng 3800 người, đạo đức sốt sắng nhờ ảnh hưởng hội đoàn thời Cha Phêrô Phạm Tuấn Tri (1955 - 1998).</p>
+<h2 class="fade-in">Kiến trúc</h2>
+    <p>Nhà Thờ Bến Tre có thiết kế độc đáo với sự kết hợp giữa phong cách Gothic phương Tây và những đặc trưng truyền thống Việt Nam. Mái vòm cao vút, các cửa kính màu sắc đẹp mắt và tháp chuông vững chãi là những điểm nhấn đặc sắc của công trình này. Nội thất nhà thờ được trang trí tinh xảo, tạo nên không gian linh thiêng và trang nghiêm.</p>
+  <div class="image-container">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOGXrqFVUBwyhcbtcJ7ISPGnMSe4zkll8nwIoSo=s1360-w1360-h1020" alt="Cổng">
+   <img src="https://lh3.googleusercontent.com/p/AF1QipOBgLSrTIYMdn9vE9dqoCgItmtq0YeTZKT3CuJW=s1360-w1360-h1020" alt="Bên trong nhà thờ">
+ </div>
+  
+<h2 class="fade-in">Các sự kiện đặc biệt</h2>
+    <li><strong>Lễ Giáng Sinh (25/12):</strong> Lễ hội lớn nhất trong năm của nhà thờ, thu hút đông đảo tín đồ tham gia với các nghi lễ trang trọng.</li>
+        <li><strong>Lễ Phục Sinh:</strong> Buổi lễ tôn vinh sự kiện phục sinh của Chúa, là dịp để cộng đồng tôn thờ và cầu nguyện cho hòa bình và thịnh vượng.</li>
+        <li><strong>Lễ kỷ niệm ngày thành lập nhà thờ:</strong> Được tổ chức hàng năm, thu hút nhiều khách tham quan và tín đồ đến tham gia các hoạt động cầu nguyện và sinh hoạt cộng đồng.</li>
+    </ul>
+  <div class="image-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT811NJCwPH8yC634lA1Yf7R0DhKRv0nQ9ZOFEpIy2WCGAE3iZ7P2-sDYzAGH9NA6h69pg&usqp=CAU">
+    </div>
+<h2>Hình ảnh Lễ kỷ niệm </h2>
+ <div class="image-container">
+   <img src="https://lh3.googleusercontent.com/p/AF1QipMwMhYtDtg6nPmgNt0vgG-EPhKT4rRShTio9L0p=s1360-w1360-h1020" alt="Lễ kỷ niệm">
+   <img src="https://lh3.googleusercontent.com/p/AF1QipPpLs5AYusQWQEkpQTUXvoU1uOX7REbnMGr9jRq=s1360-w1360-h1020" alt="Lễ kỷ niệm">
+ </div>
+</section>
+
+<div class="map fade-in">
+    <a href="https://maps.app.goo.gl/z7pN3E6FyVofjGnJ7" target="_blank">📍 Xem bản đồ</a>
+</div>
+
+<section class="comments">
+  <h2>Đánh giá & Bình luận</h2>
+
+<form id="commentForm">
+  <input type="text" id="commentInput" placeholder="Nhập bình luận...">
+  <button type="submit">Gửi</button>
+</form>
+<div id="commentList"></div>
+    <!-- Bình luận sẽ được hiển thị ở đây -->
+  </div>
+
+</section>
+<div class="share">
+    <a href="#" class="share-btn facebook" onclick="shareFacebook()">
+        <img src="facebook-icon.png" alt="Facebook" width="20"> Chia sẻ Facebook
+    </a>
+    <a href="#" class="share-btn twitter" onclick="shareTwitter()">
+        <img src="twitter-icon.png" alt="Twitter" width="20"> Chia sẻ Twitter
+    </a>
+    <a href="#" class="share-btn zalo" onclick="shareZalo()">
+        <img src="zalo-icon.png" alt="Zalo" width="20"> Chia sẻ Zalo
+    </a>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Du lịch Bến Tre. Mọi quyền được bảo lưu.</p>
+</footer>
+<script>let images = document.querySelectorAll(".gallery img");
+let lightbox = document.getElementById("lightbox");
+let lightboxImg = document.getElementById("lightbox-img");
+let lightboxCaption = document.getElementById("lightbox-caption");
+let currentIndex = 0;
+
+images.forEach((img, index) => {
+img.addEventListener("click", function () {
+lightbox.style.display = "flex";
+lightboxImg.src = this.src;
+lightboxCaption.textContent = this.alt;
+currentIndex = index;
+});
+});
+
+document.getElementById("close-lightbox").addEventListener("click", () => {
+lightbox.style.display = "none";
+});</script>
+<script>document.addEventListener("DOMContentLoaded", function () {
+gsap.utils.toArray(".fade-in").forEach(function (element) {
+gsap.to(element, {
+opacity: 1,
+y: 0,
+duration: 1.2,
+ease: "power2.out",
+scrollTrigger: {
+trigger: element,
+start: "top 80%",
+toggleActions: "play none none none",
+},
+});
+});
+});</script>
+<script>
+  function shareFacebook() {
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+  }
+
+  function shareTwitter() {
+    const url = encodeURIComponent(window.location.href);
+    const text = encodeURIComponent("Hãy xem bài viết này về nhà thờ Bến Tre!");
+    window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
+  }
+
+  function shareZalo() {
+    const url = encodeURIComponent(window.location.href);
+    window.open(`https://zalo.me/share?url=${url}`, '_blank');
+  }
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const commentForm = document.getElementById("commentForm");
+    const commentText = document.getElementById("commentText");
+    const commentList = document.getElementById("commentList");
+
+    // Tải bình luận từ LocalStorage
+    function loadComments() {
+      const comments = JSON.parse(localStorage.getItem("comments")) || [];
+      commentList.innerHTML = "";
+      comments.forEach(comment => {
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("comment");
+        commentDiv.innerHTML = `<p><strong>Người dùng:</strong> ${comment}</p>`;
+        commentList.appendChild(commentDiv);
+      });
+    }
+
+    // Xử lý khi gửi bình luận
+    commentForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const newComment = commentText.value.trim();
+      if (newComment) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.push(newComment);
+        localStorage.setItem("comments", JSON.stringify(comments));
+        commentText.value = "";
+        loadComments();
+      }
+    });
+
+    loadComments();
+  });
+</script>
+<script>
+  // Xử lý khi click vào ảnh để phóng to
+  document.querySelectorAll(".image-container img").forEach(img => {
+    img.addEventListener("click", function() {
+      document.getElementById("lightbox-img").src = this.src;
+      document.getElementById("lightbox").style.display = "flex";
+    });
+  });
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+
+  // Xử lý bình luận với tính năng xóa
+  document.addEventListener("DOMContentLoaded", function() {
+    const commentForm = document.getElementById("commentForm");
+    const commentText = document.getElementById("commentText");
+    const commentList = document.getElementById("commentList");
+
+    function loadComments() {
+      const comments = JSON.parse(localStorage.getItem("comments")) || [];
+      commentList.innerHTML = "";
+      comments.forEach((comment, index) => {
+        const commentDiv = document.createElement("div");
+        commentDiv.classList.add("comment");
+        commentDiv.innerHTML = `
+          <p><strong>Người dùng:</strong> ${comment}</p>
+          <button class="delete-btn" onclick="deleteComment(${index})">Xóa</button>
+        `;
+        commentList.appendChild(commentDiv);
+      });
+    }
+
+    commentForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const newComment = commentText.value.trim();
+      if (newComment) {
+        const comments = JSON.parse(localStorage.getItem("comments")) || [];
+        comments.push(newComment);
+        localStorage.setItem("comments", JSON.stringify(comments));
+        commentText.value = "";
+        loadComments();
+      }
+    });
+
+    window.deleteComment = function(index) {
+      let comments = JSON.parse(localStorage.getItem("comments")) || [];
+      comments.splice(index, 1);
+      localStorage.setItem("comments", JSON.stringify(comments));
+      loadComments();
+    };
+
+    loadComments();
+  });
+</script>
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img" src="" alt="Phóng to ảnh">
+</div>
+<script>
+  function revealOnScroll() {
+    document.querySelectorAll(".fade-in").forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight - 50) {
+        el.classList.add("visible");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll(); // Kiểm tra ngay khi trang tải xong
+</script>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll(".image-container img");
+    let lightbox = document.getElementById("lightbox");
+    let lightboxImg = document.getElementById("lightbox-img");
+    let lightboxCaption = document.getElementById("lightbox-caption");
+    let currentIndex = 0;
+    let imageList = [];
+
+    // Lưu danh sách ảnh để điều hướng
+    images.forEach((img, index) => {
+        imageList.push({ src: img.src, alt: img.alt });
+        img.addEventListener("click", function () {
+            openLightbox(index);
+        });
+    });
+
+    function openLightbox(index) {
+        lightbox.style.display = "flex";
+        currentIndex = index;
+        updateLightbox();
+    }
+
+    function updateLightbox() {
+        lightboxImg.src = imageList[currentIndex].src;
+        lightboxCaption.textContent = imageList[currentIndex].alt;
+    }
+
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+
+    function prevImage() {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateLightbox();
+        }
+    }
+
+    function nextImage() {
+        if (currentIndex < imageList.length - 1) {
+            currentIndex++;
+            updateLightbox();
+        }
+    }
+
+    document.getElementById("close-lightbox").addEventListener("click", closeLightbox);
+    document.getElementById("prev-lightbox").addEventListener("click", prevImage);
+    document.getElementById("next-lightbox").addEventListener("click", nextImage);
+});
+</script>
+<script>
+  function shareFacebook() {
+      let url = encodeURIComponent(window.location.href);
+      let facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+      window.open(facebookUrl, '_blank');
+  }
+
+  function shareTwitter() {
+      let url = encodeURIComponent(window.location.href);
+      let text = encodeURIComponent("Hãy xem bài viết này!");
+      let twitterUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+      window.open(twitterUrl, '_blank');
+  }
+
+  function shareZalo() {
+      let url = encodeURIComponent(window.location.href);
+      let zaloUrl = `https://zalo.me/share?url=${url}`;
+      window.open(zaloUrl, '_blank');
+  }
+</script>
+<script>const commentForm = document.querySelector("#commentForm");
+const commentList = document.querySelector("#commentList");
+const commentInput = document.querySelector("#commentInput");
+
+function loadComments() {
+commentList.innerHTML = "";
+let comments = JSON.parse(localStorage.getItem("comments")) || [];
+comments.forEach((comment, index) => {
+let commentItem = document.createElement("div");
+commentItem.classList.add("comment-item");
+commentItem.innerHTML = `
+<img src="avatar.png" class="avatar">
+<span>${comment}</span>
+<button onclick="deleteComment(${index})">Xóa</button>
+`;
+commentList.appendChild(commentItem);
+});
+}
+
+function addComment(e) {
+e.preventDefault();
+let comments = JSON.parse(localStorage.getItem("comments")) || [];
+if (commentInput.value.trim() !== "") {
+comments.push(commentInput.value);
+localStorage.setItem("comments", JSON.stringify(comments));
+commentInput.value = "";
+loadComments();
+}
+}
+
+function deleteComment(index) {
+let comments = JSON.parse(localStorage.getItem("comments")) || [];
+comments.splice(index, 1);
+localStorage.setItem("comments", JSON.stringify(comments));
+loadComments();
+}
+
+document.addEventListener("DOMContentLoaded", loadComments);
+commentForm.addEventListener("submit", addComment);</script>
+</body>
+</html>
